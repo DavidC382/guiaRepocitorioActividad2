@@ -1,0 +1,84 @@
+<div class="alert alert-secondary mt-5">
+    <h1><i class="fa fa-user"></i>&nbsp;&nbsp;<small>Informacion de el usuario</small> </h1>
+    <hr>
+
+    <div class="animated fadeIn fast container">
+
+        <form (ngSubmit)=" guardar( f ) " #f="ngForm">
+            <div class="row align-items-start">
+                <div class="col">
+
+                    <div class="col g-3 align-items-center mb-3">
+                        <div class="row-auto">
+                            <label>Primer Nombre</label>
+                        </div>
+                        <div class="row-auto">
+                            <input type="text" class="form-contrl w-50" placeholder="Primer Nombre del Usuario" [(ngModel)]="user.priNombre" name="priNombre" required>
+                        </div>
+                    </div>
+                    <div class="col g-3 align-items-center mb-3">
+                        <div class="row-auto">
+                            <label>Segundo Nombre</label>
+                        </div>
+                        <div class="row-auto">
+                            <input type="text" class="form-contrl w-50" placeholder="Segundo Nombre del Usuario" [(ngModel)]="user.segNombre" name="segNombre" required>
+                        </div>
+                    </div>
+                    <div class="col g-3 align-items-center mb-3">
+                        <div class="row-auto">
+                            <label>Primer Apellido</label>
+                        </div>
+                        <div class="row-auto">
+                            <input type="text" class="form-contrl w-50" placeholder="Primer Apellido del Usuario" [(ngModel)]="user.priApellido" name="priApellido" required>
+                        </div>
+                    </div>
+                    <div class="col g-3 align-items-center mb-3">
+                        <div class="row-auto">
+                            <label>Segundo Apellido</label>
+                        </div>
+                        <div class="row-auto">
+                            <input type="text" class="form-contrl w-50" placeholder="Segundo Apellido del Usuario" [(ngModel)]="user.segApellido" name="segApellido" required>
+                        </div>
+                    </div>
+                    <div class="col g-3 align-items-center mb-3">
+                        <div class="row-auto">
+                            <label>Edad</label>
+                        </div>
+                        <div class="row-auto">
+                            <input type="number" class="form-contrl w-50" placeholder="Edad del Usuario" [(ngModel)]="user.edad" name="edad" required>
+                        </div>
+                    </div>
+                    <div class="col g-3 align-items-center mb-3">
+                        <div class="row-auto">
+                            <label>Ciudad</label>
+                        </div>
+                        <div class="row-auto">
+                            <input type="text" class="form-contrl w-50" placeholder="Ciudad del Usuario" [(ngModel)]="user.ciudad" name="ciudad" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <br><br>
+                    <img src="https://images.ecestaticos.com/XpHlnlxZu162wj1Gpt87N8xcW8o=/0x16:987x534/600x315/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F62c%2Fe5d%2F314%2F62ce5d3141c0b670144a692b7f6a21fa.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-start">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary w-20">
+                        <i class="fa fa-save"></i>
+                        Guardar
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-warning w-20" routerLink="/home">
+                        <i class="fa fa-arrow-rotate-left"></i>
+                        Atras
+                    </button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>
