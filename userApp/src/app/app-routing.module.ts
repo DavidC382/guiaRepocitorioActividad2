@@ -8,7 +8,7 @@ import { UsersComponent } from './pages/users/users.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'usuarios', component: UsersComponent},
-  {path: 'usuario', component: UsuarioComponent},
+  {path: 'usuario/:id', component: UsuarioComponent},
   {path: '**',pathMatch: 'full',redirectTo: 'home'}
 ];
 
